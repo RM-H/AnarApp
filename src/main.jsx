@@ -4,6 +4,8 @@ import Mainlayout from "./layouts/Mainlayout.jsx";
 import {Provider} from 'react-redux'
 import store from './store/store.js'
 import {createTheme, ThemeProvider} from "@mui/material";
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {Home} from './pages'
 
 
 const theme = createTheme({
@@ -26,6 +28,22 @@ const theme = createTheme({
     }
 });
 
+const router = createBrowserRouter(
+    [
+        {
+            path: '/',
+            element: <Mainlayout/>,
+            children: [
+                {
+                    path: '/',
+                    element: <Home/>,
+                }
+            ]
+        }
+    ]
+)
+
+
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <Provider store={store}>
@@ -33,7 +51,11 @@ createRoot(document.getElementById('root')).render(
 
             <ThemeProvider theme={theme}>
 
-                <Mainlayout/>
+                <RouterProvider router={router}>
+
+
+                    <Mainlayout/>
+                </RouterProvider>
             </ThemeProvider>
         </Provider>
 

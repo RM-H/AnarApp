@@ -19,7 +19,7 @@ const Bottomnav = () => {
                     </p>
 
                     <p>
-                        <NumericFormat displayType='text'  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>
+                        <NumericFormat displayType='text' className='yekan'  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>
 
                     </p>
                     <Chip icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled" color='success' sx={{direction:'ltr'}} />

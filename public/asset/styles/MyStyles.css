@@ -33,7 +33,7 @@
 
 /* Define the scrollbar track */
 ::-webkit-scrollbar-track {
-    background-color: #f5f5f5; /* Background color of the scrollbar track */
+    background-color: rgba(245, 245, 245, 0); /* Background color of the scrollbar track */
     border-radius: 0.3rem; /* Border radius of the scrollbar track */
 }
 
@@ -77,6 +77,13 @@ body {
 .clronebg {
     background-color: var(--clrone);
     color: var(--clrfour);
+}
+
+
+.linethroughRed{
+    text-decoration: line-through var(--clrone);
+    text-decoration-thickness: 0.1rem;
+
 }
 
 /*------------*/
@@ -171,7 +178,7 @@ body {
 
 .dvhcontainer {
 
-    height: 100dvh;
+    min-height: 100dvh;
 
 }
 
@@ -198,8 +205,10 @@ body {
     img {
         height: 100%;
         width: 100%;
+
     }
     .swiper-scrollbar-drag {
+
         background: var(--clrone);
     }
 }
@@ -336,6 +345,7 @@ body {
 }
 
 .topnav {
+    z-index: 200;
     position: fixed !important;
     display: flex;
     align-items: center;
@@ -343,7 +353,7 @@ body {
     width: 100%;
     height: 4rem;
     background-color: var(--clrone);
-    border-radius: 0px 0px 1.6rem 1.6rem;
+    border-radius: 0px 0px 1.1rem 1.1rem;
 }
 
 .topnav-icons {
@@ -351,7 +361,7 @@ body {
 }
 
 .botnav {
-    height: 9rem;
+    height: 8.5rem;
     position: fixed !important;
 
     bottom: 0;
@@ -383,7 +393,7 @@ body {
 
 .botnavcontrols {
     background-color: var(--clrfour);
-    height: 5.5rem;
+    height: 5rem;
     margin-bottom: 0.5rem;
 
     display: flex;
@@ -438,6 +448,9 @@ body {
 
 .borderradone {
     border-radius: 1rem !important;
+}
+.borderradtwo {
+    border-radius: 0.6rem !important;
 }
 
 

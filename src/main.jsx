@@ -5,7 +5,7 @@ import {Provider} from 'react-redux'
 import store from './store/store.js'
 import {createTheme, ThemeProvider} from "@mui/material";
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import {Home} from './pages'
+import {Home,Supermarket} from './pages'
 
 
 const theme = createTheme({
@@ -15,9 +15,6 @@ const theme = createTheme({
         },
         secondary: {
             main: '#22092C'
-        },
-        third: {
-            main: '#EEF5FF'
         },
         success: {
             main: '#186F65'
@@ -36,7 +33,12 @@ const router = createBrowserRouter(
             children: [
                 {
                     path: '/',
-                    element: <Home/>,
+                    element: <Home/>
+                } ,
+                {
+                    path: '/supermarket',
+                    element: <Supermarket/>
+
                 }
             ]
         }

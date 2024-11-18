@@ -21,3 +21,13 @@ export {default as ProductThumb} from './core/ProductThumb.jsx'
 // ------------------------home page
 export {default as Homesilder} from './Homepage/Homeslider.jsx'
 export {default as SpecialOffers} from './Homepage/HomespecialOffers.jsx'
+export {default as Dashboard} from './Homepage/HomepageDashboard.jsx'
+export {default as Categories} from './Homepage/Categories.jsx'
+export {default as CategoryCard} from './Homepage/CategoryCard.jsx'
+
+
+
+
+// ------------------------supermarket page
+export {default as ProfileWidget} from './ُSupermarket/SuppermarketProfileWidget.jsx'
+export {default as SupermarketSlider} from './ُSupermarket/SupermarketSlider.jsx'

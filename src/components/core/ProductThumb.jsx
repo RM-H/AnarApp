@@ -20,10 +20,10 @@ const ProductThumb = ({onSale}) => {
                     {
 
                         onSale && (
-                            <span className='is-position-absolute clronetext yekan borderradone px-1 off'>
-                    10
-                   %
-                </span>
+                            <span className='is-position-absolute clronetext yekan borderradone px-1 fs1 off'>
+                          10
+                             %
+                         </span>
                         )
 
                     }
@@ -78,6 +78,18 @@ const ProductThumb = ({onSale}) => {
                                        value='  90000000 '
                                        suffix='    تومان' thousandSeparator=','/>
                     </p>
+
+
+                    {/*off*/}
+
+                    {
+                        onSale &&
+                        <p className='has-text-centered '>
+                            <NumericFormat className='yekan fs1  linethroughRed ' displayType='text'
+                                           value='  100000000 '
+                                           suffix='    تومان' thousandSeparator=',' />
+                        </p>
+                    }
 
 
                 </div>

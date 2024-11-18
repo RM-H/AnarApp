@@ -12,24 +12,24 @@ const Bottomnav = () => {
     return (
         <>
             <div className='botnav  is-position-relative  '>
-                <div className={`cartnav  ${Hasitemsincart==true && 'cartnavshow'}`}  >
+                <div className={`cartnav shadowtwo fs1  ${Hasitemsincart==true && 'cartnavshow'}`}  >
                     <p>
                         جمع  سبد :
 
                     </p>
 
                     <p>
-                        <NumericFormat displayType='text' className='yekan'  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>
+                        <NumericFormat displayType='text' className='yekan '  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>
 
                     </p>
-                    <Chip icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled" color='success' sx={{direction:'ltr'}} />
+                    <Chip size='small'  icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled " color='success' sx={{direction:'ltr'}} />
 
                 </div>
 
                 <Paper elevation={14} className='botnavcontrols mx-auto w90    borderradone'>
                     <div className='botnavButton '>
                         <img src="/asset/icons/home.png" alt=""/>
-                        <p>
+                        <p >
                             خانه
 
                         </p>

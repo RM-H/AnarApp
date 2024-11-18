@@ -125,7 +125,7 @@ const Topnav = () => {
 
     return (
         <>
-            <div className='topnav'>
+            <div className='topnav shadowtwo'>
                 <div className='columns is-flex w100'>
                     <div className='column is-4 is-flex is-align-items-center is-justify-content-center'
                          onClick={() => setOpen(true)}>

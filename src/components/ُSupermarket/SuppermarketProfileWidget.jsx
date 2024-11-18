@@ -80,7 +80,7 @@ const SuppermarketProfileWidget = () => {
 
                       <div className='column is-12-mobile is-12-tablet has-text-centered is-flex is-justify-content-space-evenly is-align-items-center'>
                           <Button variant='contained' color='secondary' size='small' className='borderradtwo '>
-                              مدیریت آدرس ها
+                               آدرس ها
                           </Button>
                           <Button variant='contained' color='secondary' size='small' className='borderradtwo mx-1'>
                               سفارشات
@@ -90,7 +90,7 @@ const SuppermarketProfileWidget = () => {
                           </Button>
 
                           <Button variant='contained' color='secondary' size='small' className='borderradtwo '>
-                              تاریخچه
+                              گردش
                           </Button>
 
                       </div>

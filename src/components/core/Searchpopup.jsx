@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import { Dialog, DialogTitle, Slide,Divider} from "@mui/material";
 import {ProductThumb} from '../index.js'
+import {KeyboardArrowUp} from '@mui/icons-material'
 
 
 
@@ -38,13 +39,12 @@ const Searchpopup = () => {
               aria-describedby="alert-dialog-slide-description"
               sx={{
                   '& .MuiDialog-container': {flexDirection: 'column', justifyContent: 'flex-start'},
-                  '& .MuiDialog-paper': {m: 0, width: 1  }
+                  '& .MuiDialog-paper': {m: 0, width: 1}
               }}
           >
               <DialogTitle variant='caption'>
 
                   جستجو بین کالا ها
-
 
 
                   <span className='is-float-left yekan'>
@@ -67,7 +67,7 @@ const Searchpopup = () => {
               {/*results*/}
               <Divider/>
 
-              <div className='columns is-flex  m-0 is-multiline py-5' style={{overflow:'auto'}}>
+              <div className='columns is-flex  m-0 is-multiline py-5' style={{overflow: 'auto'}}>
                   <ProductThumb/>
                   <ProductThumb/>
                   <ProductThumb/>
@@ -76,13 +76,21 @@ const Searchpopup = () => {
                   <ProductThumb/>
                   <ProductThumb/>
                   <ProductThumb/>
+                  <ProductThumb/>
+                  <ProductThumb/>
+                  <ProductThumb/>
+                  <ProductThumb/>
+
 
               </div>
 
               {/*results*/}
 
 
-
+              <span className='is-position-absolute  has-background-grey-light w100 is-flex is-justify-content-center is-align-items-center'
+                    style={{left: '0%', bottom: '0%'}} onClick={handleClose}>
+                      <KeyboardArrowUp />
+                  </span>
           </Dialog>
 
 

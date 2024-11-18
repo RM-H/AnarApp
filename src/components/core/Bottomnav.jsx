@@ -2,11 +2,13 @@ import {Badge, Chip, Paper} from '@mui/material'
 import {ArrowBackIosNew} from '@mui/icons-material'
 import {NumericFormat} from 'react-number-format'
 import {useState} from "react";
+import {useNavigate} from 'react-router-dom'
 
 
 const Bottomnav = () => {
 
     const [Hasitemsincart, setHasitemsincart] = useState(false);
+    const navigate = useNavigate();
 
 
     return (
@@ -27,7 +29,7 @@ const Bottomnav = () => {
                 </div>
 
                 <Paper elevation={14} className='botnavcontrols mx-auto w90    borderradone'>
-                    <div className='botnavButton '>
+                    <div className='botnavButton ' onClick={()=>navigate('/')}>
                         <img src="/asset/icons/home.png" alt=""/>
                         <p >
                             خانه

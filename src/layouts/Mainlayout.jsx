@@ -4,6 +4,9 @@ import {Topnav,Botnav} from '../components'
 const Mainlayout = () => {
   return(
       <>
+
+
+
           <Topnav/>
           <main className='dvhcontainer '>
 
@@ -15,6 +18,7 @@ const Mainlayout = () => {
 
 
           <Botnav/>
+
 
 
       </>

@@ -24,7 +24,7 @@ const Bottomnav = () => {
                         <NumericFormat displayType='text' className='yekan '  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>
 
                     </p>
-                    <Chip size='small'  icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled " color='success' sx={{direction:'ltr'}} />
+                    <Chip size='small'  icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled " color='success' sx={{direction:'ltr'}} onClick={()=>navigate('/cart')} />
 
                 </div>
 

@@ -14,9 +14,11 @@ import {useState} from "react";
 import {NumericFormat} from "react-number-format";
 import {AddBox, PhoneEnabled} from '@mui/icons-material'
 import {SidebarOrderStat,Searchpopup} from '../index.js'
+import {useNavigate} from 'react-router-dom'
 
 
 const Topnav = () => {
+    const navigate = useNavigate();
 
     const [open, setOpen] = useState(false);
 
@@ -132,7 +134,7 @@ const Topnav = () => {
                         <img src="/asset/icons/menu-bar.png" alt="" className='topnav-icons' />
                     </div>
 
-                    <div className='column is-4 has-text-centered'>
+                    <div className='column is-4 has-text-centered' onClick={() => navigate('/')}>
                         <img src="/asset/images/logo-white.png" alt="" className='logo mx-auto'/>
                     </div>
 

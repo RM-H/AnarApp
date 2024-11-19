@@ -26,10 +26,11 @@ const ProductThumb = ({onSale}) => {
 
     return (
         <>
-            <div className='column is-4-mobile is-4-tablet p-2 '>
+            <div className='column is-4-mobile is-4-tablet p-1 '>
 
 
-                <div className='borderradone p-1 productThumbcard is-position-relative  '>
+                <div className='productThumbcard is-position-relative  '
+                     >
 
                     {/*off*/}
                     {
@@ -44,13 +45,11 @@ const ProductThumb = ({onSale}) => {
                     }
 
                     {/*off*/}
-
-
                     {/*buttons*/}
 
                     <div
-                        className={`ATC-buttons  is-flex is-align-items-center ${hasproduct && 'ATC-buttons--show'}  `}>
-                        <button className='hidden has-radius-rounded  textclrsix  '
+                        className={`ATC-buttons mx-auto   is-flex is-align-items-center ${hasproduct && 'ATC-buttons--show'}  `}>
+                        <button className='hidden   textclrsix   '
                                 onClick={() => setHasProduct(!hasproduct)}>
                             <Add/>
                         </button>
@@ -59,7 +58,7 @@ const ProductThumb = ({onSale}) => {
                                 <Add/>
                             </button>
 
-                            <span className='yekan fs2 '>
+                            <span className='yekan fs1 '>
                             20
                           </span>
 
@@ -81,36 +80,37 @@ const ProductThumb = ({onSale}) => {
                     {/*buttons*/}
 
 
-                    <div className='' onClick={handleClickOpen}>
-
-                        <img src="/asset/images/product-temp.jpg" alt=""/>
 
 
-                        <p className='fs1'>
-                            شیرین‌کننده کتو اریتریتول و استویا مخصوص آشپزی بیلو - 210 گرم
+                    <img src="/asset/images/product-temp.jpg" alt="" className='borderradone'  onClick={handleClickOpen}/>
 
-                        </p>
 
-                        <p className='has-text-centered'>
-                            <NumericFormat className='yekan fs1 has-text-weight-bold ' displayType='text'
-                                           value='  90000000 '
+                </div>
+                <div className='' onClick={handleClickOpen}>
+
+
+                    <p className='fs1 has-text-weight-bold has-text-centered'>
+                        شیرین‌کننده کتو
+
+                    </p>
+
+                    <p className='has-text-centered'>
+                        <NumericFormat className='yekan fs2 has-text-black ' displayType='text'
+                                       value='  9600 '
+                                       suffix='    تومان' thousandSeparator=','/>
+                    </p>
+
+
+                    {/*off*/}
+
+                    {
+                        onSale &&
+                        <p className='has-text-centered '>
+                            <NumericFormat className='yekan fs1  linethroughRed ' displayType='text'
+                                           value='  100000000 '
                                            suffix='    تومان' thousandSeparator=','/>
                         </p>
-
-
-                        {/*off*/}
-
-                        {
-                            onSale &&
-                            <p className='has-text-centered '>
-                                <NumericFormat className='yekan fs1  linethroughRed ' displayType='text'
-                                               value='  100000000 '
-                                               suffix='    تومان' thousandSeparator=','/>
-                            </p>
-                        }
-                    </div>
-
-
+                    }
                 </div>
 
             </div>
@@ -170,11 +170,15 @@ const ProductThumb = ({onSale}) => {
 
                     <div className='column px-0 is-3-mobile is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
 
+                        {
+                            onSale &&
+                            <p className='has-text-white bgclrone p-1 has-text-centered yekan borderradone px-1 fs1  '>
+                                10
+                                %
+                            </p>
+                        }
 
-                        <p className='has-text-white bgclrone p-1 has-text-centered yekan borderradone px-1 fs1  '>
-                            10
-                            %
-                        </p>
+
                         <p className='has-text-centered'>
                             <NumericFormat className='yekan fs1 has-text-weight-bold ' displayType='text'
                                            value='  90000000 '

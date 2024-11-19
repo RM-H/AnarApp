@@ -7,19 +7,21 @@
     font-family: Yekan;
 }
 
-@font-face {
-    src: url("/asset/fonts/Pinar-Regular.ttf");
-    font-family: Pinar;
-}
+/*@font-face {*/
+/*    src: url("/asset/fonts/Pinar-Regular.ttf");*/
+/*    font-family: Pinar;*/
+/*}*/
 
 :root {
-    --clrone: #BE3144;
+    /*--clrone: #BE3144;*/
+    --clrone : rgb(179 4 70);
     --clrtwo: #22092C;
-    --clrThree: #EEF5FF;
+    --clrThree: #f5f4f4;
     --clrfour: #ffffff;
     --clrfive: hsl(2deg 50.42% 53.33%);
-    --clrsix: #186F65;
-    --clrseven: #696969
+    --clrsix: #36e7a1;
+    --clrseven: #696969;
+    --clreight: rgba(33, 154, 106, 0.69);
 
 
 }
@@ -44,17 +46,19 @@
 }
 
 body * {
-    font-family: Pinar;
+    font-family: Yekan;
+
 
 }
-
 body {
-    background-color: var(--clrThree);
+    color: black;
 }
 
-.pinar {
-    font-family: Pinar;
-}
+
+
+/*.pinar {*/
+/*    font-family: Pinar;*/
+/*}*/
 
 .yekan {
     font-family: Yekan;
@@ -179,6 +183,10 @@ body {
 .dvhcontainer {
 
     min-height: 100dvh;
+    max-width: 430px;
+    margin: auto;
+    background-color: var(--clrThree);
+
 
 }
 
@@ -246,11 +254,11 @@ body {
 /*------------*/
 
 .productThumbcard {
-    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-    background-color: var(--clrfour);
+
+    /*background-color: var(--clrfour);*/
 
     .off {
-        top:15%;
+        top:25%;
         left: 3%;
        background-color: var(--clrone);
         color: var(--clrfour);
@@ -260,12 +268,18 @@ body {
 
     }
 
+    img {
+        border: 1px solid var(--clreight);
+
+    }
+
 
 }
 
 
 .ATC-buttons {
-    width: 1.5rem;
+
+    width: 2rem;
     height: 2rem;
     transition: width 0.5s ease-in-out;
 
@@ -357,9 +371,12 @@ body {
     align-items: center;
     top: 0;
     width: 100%;
+    max-width: 430px;
+    background: var(--clrone);
+
     height: 4rem;
-    background-color: var(--clrtwo);
-    border-radius: 0px 0px 1.1rem 1.1rem;
+
+
 }
 
 .topnav-icons {
@@ -369,9 +386,11 @@ body {
 .botnav {
     height: 8.5rem;
     position: fixed !important;
+    max-width: 430px;
 
     bottom: 0;
     width: 100%;
+
     /*background-color: var(--clrtwo);*/
     display: flex;
     align-items: flex-end;

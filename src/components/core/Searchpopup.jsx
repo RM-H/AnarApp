@@ -87,7 +87,7 @@ const Searchpopup = () => {
               {/*results*/}
 
 
-              <span className='is-position-absolute  has-background-grey-light w100 is-flex is-justify-content-center is-align-items-center'
+              <span className='is-position-absolute  bgclrtwo has-text-white w100 is-flex is-justify-content-center is-align-items-center'
                     style={{left: '0%', bottom: '0%'}} onClick={handleClose}>
                       <KeyboardArrowUp />
                   </span>

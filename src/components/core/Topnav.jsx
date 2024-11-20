@@ -127,7 +127,7 @@ const Topnav = () => {
 
     return (
         <>
-            <div className='topnav shadowtwo'>
+            <div className='topnav '>
                 <div className='columns is-flex w100'>
                     <div className='column is-4 is-flex is-align-items-center is-justify-content-center'
                          onClick={() => setOpen(true)}>
@@ -135,7 +135,7 @@ const Topnav = () => {
                     </div>
 
                     <div className='column is-4 has-text-centered' onClick={() => navigate('/')}>
-                        <img src="/asset/images/logo-white.png" alt="" className='logo mx-auto'/>
+                        <img src="/asset/images/logo-red.webp" alt="" className='logo mx-auto'/>
                     </div>
 
                     <div className='column is-4 is-flex is-align-items-center is-justify-content-center'>

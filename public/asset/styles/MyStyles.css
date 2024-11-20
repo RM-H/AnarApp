@@ -14,13 +14,13 @@
 
 :root {
     /*--clrone: #BE3144;*/
-    --clrone : rgb(179 4 70);
+    --clrone : rgb(255 0 76);
     --clrtwo: #22092C;
-    --clrThree: #f5f4f4;
+    --clrThree: rgb(255 255 255);
     --clrfour: #ffffff;
     --clrfive: hsl(2deg 50.42% 53.33%);
     --clrsix: #36e7a1;
-    --clrseven: #696969;
+    --clrseven: rgba(220, 219, 219, 0.66);
     --clreight: rgba(33, 154, 106, 0.69);
 
 
@@ -86,7 +86,8 @@ body {
 
 .linethroughRed{
     text-decoration: line-through var(--clrone);
-    text-decoration-thickness: 0.1rem;
+    text-decoration-thickness: 0.06rem;
+
 
 }
 
@@ -96,7 +97,7 @@ body {
 
 
 .bgclrone {
-    background-color: var(--clrone);
+    background-color: var(--clrone) !important;
 }
 
 .textclrone {
@@ -224,7 +225,7 @@ body {
 .special-offers {
     min-height: 13rem;
     .columns {
-        border-top: 2px solid var(--clrone);
+        /*border-top: 2px solid var(--clrsix);*/
 
         height: 100%;
     }
@@ -255,7 +256,7 @@ body {
 
 .productThumbcard {
 
-    /*background-color: var(--clrfour);*/
+    background-color: var(--clrfour);
 
     .off {
         top:25%;
@@ -269,7 +270,8 @@ body {
     }
 
     img {
-        border: 1px solid var(--clreight);
+        /*border: 1px solid var(--clreight);*/
+        background-color: var(--clrfour);
 
     }
 
@@ -372,7 +374,7 @@ body {
     top: 0;
     width: 100%;
     max-width: 430px;
-    background: var(--clrone);
+    background: var(--clrfour);
 
     height: 4rem;
 
@@ -384,11 +386,12 @@ body {
 }
 
 .botnav {
-    height: 8.5rem;
+    height: 5rem;
     position: fixed !important;
     max-width: 430px;
 
-    bottom: 0;
+
+    bottom: 1%;
     width: 100%;
 
     /*background-color: var(--clrtwo);*/
@@ -401,14 +404,16 @@ body {
     display: flex;
     flex-direction: column;
 
+
     img {
         width: 3rem;
     }
 
     p {
         text-align: center;
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         font-weight: bold;
+        color: var(--clrfour);
 
 
         margin-top: 0.6rem;
@@ -417,7 +422,7 @@ body {
 }
 
 .botnavcontrols {
-    background-color: var(--clrfour);
+
     height: 5rem;
     margin-bottom: 0.5rem;
 

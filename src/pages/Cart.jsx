@@ -1,4 +1,4 @@
-import {Blank} from "../components/index.js";
+import {Blank, ProfileWidget} from "../components/index.js";
 import {Paper, Divider} from '@mui/material'
 import React from "react";
 import {NumericFormat} from "react-number-format";
@@ -10,6 +10,7 @@ const Cart = () => {
         <>
             <div className='columns m-0 is-multiline'>
                 <Blank/>
+
                 <div className='column is-12'>
                     <Paper elevation={3} className='borderradtwo p-2'>
                         <div className='columns'>
@@ -26,7 +27,9 @@ const Cart = () => {
                             <div className='column is-12 p-0'>
                                 <div className='columns is-flex m-0'>
                                     <div className='column is-3-mobile '>
-                                        <img src="/asset/images/product-temp.jpg" alt="" style={{width: '6rem'}}/>
+                                        <img
+                                            src="https://dkstatics-public.digikala.com/digikala-categories/8852fd03a8ae293e504ed369dd5c242e69f78a76_1713950619.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
+                                            alt="" style={{width: '6rem'}}/>
                                     </div>
 
                                     <div
@@ -79,7 +82,9 @@ const Cart = () => {
                             <div className='column is-12 p-0'>
                                 <div className='columns is-flex m-0'>
                                     <div className='column is-3-mobile '>
-                                        <img src="/asset/images/product-temp.jpg" alt="" style={{width: '6rem'}}/>
+                                        <img
+                                            src="https://dkstatics-public.digikala.com/digikala-categories/8852fd03a8ae293e504ed369dd5c242e69f78a76_1713950619.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
+                                            alt="" style={{width: '6rem'}}/>
                                     </div>
 
                                     <div
@@ -132,7 +137,9 @@ const Cart = () => {
                             <div className='column is-12 p-0'>
                                 <div className='columns is-flex m-0'>
                                     <div className='column is-3-mobile '>
-                                        <img src="/asset/images/product-temp.jpg" alt="" style={{width: '6rem'}}/>
+                                        <img
+                                            src="https://dkstatics-public.digikala.com/digikala-categories/8852fd03a8ae293e504ed369dd5c242e69f78a76_1713950619.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
+                                            alt="" style={{width: '6rem'}}/>
                                     </div>
 
                                     <div
@@ -185,7 +192,9 @@ const Cart = () => {
                             <div className='column is-12 p-0'>
                                 <div className='columns is-flex m-0'>
                                     <div className='column is-3-mobile '>
-                                        <img src="/asset/images/product-temp.jpg" alt="" style={{width: '6rem'}}/>
+                                        <img
+                                            src="https://dkstatics-public.digikala.com/digikala-categories/8852fd03a8ae293e504ed369dd5c242e69f78a76_1713950619.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
+                                            alt="" style={{width: '6rem'}}/>
                                     </div>
 
                                     <div
@@ -243,6 +252,9 @@ const Cart = () => {
 
 
                 </div>
+                <ProfileWidget/>
+                <Blank/>
+                <Blank/>
 
             </div>
 

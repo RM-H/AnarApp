@@ -1,4 +1,4 @@
-import {Blank, Homesilder,SpecialOffers,Dashboard,Categories} from "../components/index.js";
+import {Blank, Homesilder, SpecialOffers, Dashboard, Categories, ProfileWidget} from "../components/index.js";
 
 
 
@@ -8,8 +8,10 @@ const Home = () => {
             <div className='columns m-0 is-multiline'>
                 <Blank/>
                 <Homesilder/>
-                <Dashboard/>
+                {/*<Dashboard/>*/}
+
                 <SpecialOffers/>
+                <Categories/>
 
 
                 <Blank/>

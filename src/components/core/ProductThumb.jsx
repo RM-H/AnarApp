@@ -26,11 +26,11 @@ const ProductThumb = ({onSale}) => {
 
     return (
         <>
-            <div className='column is-4-mobile is-4-tablet p-1 '>
+            <div className='column is-4-mobile is-4-tablet  ' style={{padding: '0.1rem'}}>
 
 
-                <div className='productThumbcard is-position-relative  '
-                     >
+                <div className='productThumbcard  is-position-relative  '
+                >
 
                     {/*off*/}
                     {
@@ -45,73 +45,79 @@ const ProductThumb = ({onSale}) => {
                     }
 
                     {/*off*/}
-                    {/*buttons*/}
 
-                    <div
-                        className={`ATC-buttons mx-auto   is-flex is-align-items-center ${hasproduct && 'ATC-buttons--show'}  `}>
-                        <button className='hidden   textclrsix   '
-                                onClick={() => setHasProduct(!hasproduct)}>
-                            <Add/>
-                        </button>
-                        <div className='hidden-content   '>
-                            <button className='textclrsix has-radius-rounded  '>
+
+                    <img
+                        src="https://dkstatics-public.digikala.com/digikala-categories/8852fd03a8ae293e504ed369dd5c242e69f78a76_1713950619.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80"
+                        alt="" className='borderradone ' onClick={handleClickOpen}/>
+
+
+                    <div className=''
+                        // onClick={handleClickOpen}
+                    >
+
+
+                        <p className='fs1 has-text-weight-bold has-text-centered'>
+                            شیرین‌کننده کتو
+
+                        </p>
+
+                        <p className='has-text-centered'>
+                            <NumericFormat className='yekan fs2 has-text-black ' displayType='text'
+                                           value='  9600 '
+                                           suffix='    تومان' thousandSeparator=','/>
+                        </p>
+
+
+                        {/*off*/}
+
+                        {
+                            onSale &&
+                            <p className='has-text-centered '>
+                                <NumericFormat className='yekan fs1  linethroughRed ' displayType='text'
+                                               value='  100000000 '
+                                               suffix='    تومان' thousandSeparator=','/>
+                            </p>
+                        }
+
+                        {/*buttons*/}
+
+                        <div
+                            className={`ATC-buttons mx-auto   is-flex is-align-items-center ${hasproduct && 'ATC-buttons--show'}  `}>
+                            <button className='hidden bgclrsix has-radius-rounded   has-text-white   '
+                                    onClick={() => setHasProduct(!hasproduct)}>
                                 <Add/>
                             </button>
+                            <div className='hidden-content bgclrsix   '>
+                                <button className='has-text-white has-radius-rounded  '>
+                                    <Add/>
+                                </button>
 
-                            <span className='yekan fs1 '>
-                            20
-                          </span>
+                                <span className='has-text-white fs1 '>
+                                  20
+                                  </span>
 
 
-                            <button className='textclrone has-radius-rounded '>
-                                <Remove/>
-                            </button>
+                                <button className='has-text-white has-radius-rounded '>
+                                    <Remove/>
+                                </button>
 
-                            <button className=' has-radius-rounded ' onClick={() => setHasProduct(!hasproduct)}>
-                                <DeleteForever/>
+                                <button className='has-radius-rounded has-text-white '
+                                        onClick={() => setHasProduct(!hasproduct)}>
+                                    <DeleteForever/>
 
-                            </button>
+                                </button>
+
+
+                            </div>
 
 
                         </div>
-
-
+                        {/*buttons*/}
                     </div>
-                    {/*buttons*/}
-
-
-
-
-                    <img src="/asset/images/product-temp.jpg" alt="" className='borderradone'  onClick={handleClickOpen}/>
-
 
                 </div>
-                <div className='' onClick={handleClickOpen}>
 
-
-                    <p className='fs1 has-text-weight-bold has-text-centered'>
-                        شیرین‌کننده کتو
-
-                    </p>
-
-                    <p className='has-text-centered'>
-                        <NumericFormat className='yekan fs2 has-text-black ' displayType='text'
-                                       value='  9600 '
-                                       suffix='    تومان' thousandSeparator=','/>
-                    </p>
-
-
-                    {/*off*/}
-
-                    {
-                        onSale &&
-                        <p className='has-text-centered '>
-                            <NumericFormat className='yekan fs1  linethroughRed ' displayType='text'
-                                           value='  100000000 '
-                                           suffix='    تومان' thousandSeparator=','/>
-                        </p>
-                    }
-                </div>
 
             </div>
 
@@ -165,10 +171,11 @@ const ProductThumb = ({onSale}) => {
                     </div>
 
                     <div className='column is-6-mobile '>
-                        <img src="/asset/images/product-temp.jpg" alt="" style={{width: '9rem'}}/>
+                        <img src="https://dkstatics-public.digikala.com/digikala-categories/8852fd03a8ae293e504ed369dd5c242e69f78a76_1713950619.png?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80" alt="" style={{width: '9rem'}}/>
                     </div>
 
-                    <div className='column px-0 is-3-mobile is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                    <div
+                        className='column px-0 is-3-mobile is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
 
                         {
                             onSale &&
@@ -193,7 +200,8 @@ const ProductThumb = ({onSale}) => {
                             <>
 
                                 <p className='has-text-centered '>
-                                    <NumericFormat className='yekan fs1  linethroughRed ' displayType='text'
+                                    <NumericFormat className='yekan fs1 has-text-grey linethroughRed '
+                                                   displayType='text'
                                                    value='  100000000 '
                                                    suffix='    تومان' thousandSeparator=','/>
                                 </p>

@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import { Dialog, DialogTitle, Slide,Divider} from "@mui/material";
 import {ProductThumb} from '../index.js'
-import {KeyboardArrowUp} from '@mui/icons-material'
+import {KeyboardCapslock} from '@mui/icons-material'
 
 
 
@@ -39,7 +39,7 @@ const Searchpopup = () => {
               aria-describedby="alert-dialog-slide-description"
               sx={{
                   '& .MuiDialog-container': {flexDirection: 'column', justifyContent: 'flex-start'},
-                  '& .MuiDialog-paper': {m: 0, width: 1}
+                  '& .MuiDialog-paper': {m: 0, width: 1 ,maxHeight:'66%'}
               }}
           >
               <DialogTitle variant='caption'>
@@ -87,9 +87,9 @@ const Searchpopup = () => {
               {/*results*/}
 
 
-              <span className='is-position-absolute  bgclrtwo has-text-white w100 is-flex is-justify-content-center is-align-items-center'
-                    style={{left: '0%', bottom: '0%'}} onClick={handleClose}>
-                      <KeyboardArrowUp />
+              <span className='is-position-absolute  clronebg has-text-white w100 is-flex is-justify-content-center is-align-items-center'
+                    style={{left: '0%', bottom: '0%' , height:'2.2rem'}} onClick={handleClose}>
+                      <KeyboardCapslock style={{fontSize:'3rem'}}/>
                   </span>
           </Dialog>
 

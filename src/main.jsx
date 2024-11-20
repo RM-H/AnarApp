@@ -11,7 +11,7 @@ import {Cart, Home, Supermarket} from './pages'
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#b20000'
+            main: 'rgb(255 0 76)'
         },
         secondary: {
             main: '#22092C'

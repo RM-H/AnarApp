@@ -14,36 +14,46 @@ const Bottomnav = () => {
     return (
         <>
             <div className='botnav  is-position-relative  '>
-                <div className={`cartnav shadowtwo fs1  ${Hasitemsincart==true && 'cartnavshow'}`}  >
-                    <p>
-                        جمع  سبد :
 
-                    </p>
 
-                    <p>
-                        <NumericFormat displayType='text' className='yekan '  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>
+                {/*dialogue product*/}
+                {/*<div className={`cartnav shadowtwo fs1  ${Hasitemsincart==true && 'cartnavshow'}`}  >*/}
+                {/*    <p>*/}
+                {/*        جمع  سبد :*/}
 
-                    </p>
-                    <Chip size='small'  icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled " color='success' sx={{direction:'ltr'}} onClick={()=>navigate('/cart')} />
+                {/*    </p>*/}
 
-                </div>
+                {/*    <p>*/}
+                {/*        <NumericFormat displayType='text' className='yekan '  value='  9000000 ' suffix='    تومان' thousandSeparator=','/>*/}
 
-                <Paper elevation={14} className='botnavcontrols mx-auto w90    borderradone'>
-                    <div className='botnavButton ' onClick={()=>navigate('/')}>
+                {/*    </p>*/}
+                {/*    <Chip size='small'  icon={<ArrowBackIosNew/>} label="مشاهده   " variant="filled " color='success' sx={{direction:'ltr'}} onClick={()=>navigate('/cart')} />*/}
+
+                {/*</div>*/}
+
+                <Paper elevation={14} className='botnavcontrols mx-auto w66 bgclrone    borderradone'>
+                    <div className='botnavButton ' onClick={() => navigate('/')}>
                         <img src="/asset/icons/home.png" alt=""/>
-                        <p >
+                        <p>
                             خانه
 
                         </p>
                     </div>
 
-                    <div className='botnavButton ' onClick={()=>setHasitemsincart((prevState)=>!prevState)}>
-                        <Badge   anchorOrigin={{
+                    <div className='botnavButton '>
+                        <img src="/asset/icons/profile.svg" alt=""/>
+                        <p>
+                            حساب من
+                        </p>
+                    </div>
+
+                    <div className='botnavButton ' onClick={() => setHasitemsincart((prevState) => !prevState)}>
+                        <Badge anchorOrigin={{
                             vertical: 'bottom',
                             horizontal: 'left',
                         }} color="secondary" badgeContent={25}>
 
-                            <img src="/asset/icons/cart.png" alt=""/>
+                            <img src="/asset/icons/cart.svg" alt=""/>
                         </Badge>
                         <p>
                             سبد
@@ -51,9 +61,9 @@ const Bottomnav = () => {
                     </div>
 
                     <div className='botnavButton '>
-                        <img src="/asset/icons/profile.png" alt=""/>
-                        <p >
-                           حساب من
+                        <img src="/asset/icons/profile.svg" alt=""/>
+                        <p>
+                            حساب من
                         </p>
                     </div>
 

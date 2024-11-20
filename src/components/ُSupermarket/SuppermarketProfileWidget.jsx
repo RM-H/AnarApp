@@ -25,7 +25,7 @@ const SuppermarketProfileWidget = () => {
 
                           <div>
                               <p className='my-1 mt-2 fs1'>
-                                  آدرس های من
+                                 ثبت آدرس جدید
                               </p>
                               <Divider/>
                               <div className="control my-2  ">
@@ -79,19 +79,10 @@ const SuppermarketProfileWidget = () => {
                       </div>
 
                       <div className='column is-12-mobile is-12-tablet has-text-centered is-flex is-justify-content-space-evenly is-align-items-center'>
-                          <Button variant='contained' color='secondary' size='small' className='borderradtwo '>
-                               آدرس ها
-                          </Button>
-                          <Button variant='contained' color='secondary' size='small' className='borderradtwo mx-1'>
-                              سفارشات
-                          </Button>
-                          <Button variant='contained' color='secondary' size='small' className='borderradtwo  mx-1'>
-                              افزایش موجودی
+                          <Button variant='contained' color='success' size='small' className='borderradtwo w100 '>
+                              پرداخت
                           </Button>
 
-                          <Button variant='contained' color='secondary' size='small' className='borderradtwo '>
-                              گردش
-                          </Button>
 
                       </div>
 
